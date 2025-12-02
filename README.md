@@ -1,2 +1,2 @@
 This is the basic knowledge regarding git
-Editing the file..
+Editing the file
