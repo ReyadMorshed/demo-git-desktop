@@ -439,7 +439,7 @@
    - Push the branch to GitHub.
    - Open a Pull Request on GitHub to merge `feature-update-readme` into `main`.
 
-## Task 3 – Update Local Branch from Remote (Pull Changes)
+3. **Task 3 – Update Local Branch from Remote (Pull Changes)**
 
 ### Scenario: Another teammate has merged changes into `main` on GitHub
 
@@ -453,9 +453,7 @@ To update your local `main` branch so it matches the remote `main` in GitHub Des
 4. Click **Pull origin** to download and merge the latest changes from the remote `main` into your local `main`.
 5. Once complete, your local branch will be up to date with the remote branch.
 
-✅ **Result:** Your local `main` now matches the remote `main` that includes your teammate’s merged changes.
-
-4. **Task 4 – Handling a Simple Merge Conflict in GitHub Desktop**  
+6. **Task 4 – Handling a Simple Merge Conflict in GitHub Desktop**  
    Scenario:
 
    - On GitHub (web), you edit `README.md` on `main` and commit the change.
