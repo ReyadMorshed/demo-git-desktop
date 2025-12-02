@@ -434,7 +434,7 @@
    Using GitHub Desktop and GitHub (web):
 
    - Create a new branch called `feature-update-readme` from `main`.
-   - Modify `README.md` (for example, add a new section).
+   - Modify `README.md` (for example, add a new section). (adding this line for new branch)
    - Commit the change on `feature-update-readme`.
    - Push the branch to GitHub.
    - Open a Pull Request on GitHub to merge `feature-update-readme` into `main`.
