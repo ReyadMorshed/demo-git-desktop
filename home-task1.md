@@ -83,171 +83,340 @@
     B. Only untracked files  
     C. The list of commits on the currently checked-out branch  
     D. All branches and their commits at once
+    Ans: C. The list of commits on the currently checked-out branch
 
 12. **When you see “No local changes” in GitHub Desktop, what does it mean?**  
     A. Git is not installed  
     B. Your working directory matches the last commit on the current branch  
     C. There are untracked files only  
     D. Your repo is not connected to GitHub
+    Ans: Your working directory matches the last commit on the current branch
 
 13. **Which action in GitHub Desktop corresponds to creating a local copy from a remote repository on GitHub?**  
     A. Add existing repository  
     B. Create a new repository  
     C. Clone a repository  
     D. Publish repository
+    Ans: C. Clone a repository
 
 14. **You see a blue dot next to a branch name in GitHub Desktop’s branch list. What does it usually indicate?**  
     A. The branch is remote-only  
     B. The branch is protected  
     C. The branch has uncommitted changes  
     D. The branch is currently checked out
+    Ans: D. The branch is currently checked out
 
 15. **In Git, what is the purpose of the `HEAD` pointer?**  
     A. It stores all commit messages  
     B. It points to the currently checked-out commit/branch  
     C. It points to the remote repository  
     D. It stores your username and email
+    Ans: B. It points to the currently checked-out commit/branch
 
 16. **In GitHub Desktop, how can you discard changes in a specific file (revert it to last commit)?**  
     A. Delete the file manually from the OS  
     B. Right-click the file in the Changes list and select “Discard changes”  
     C. Press a “Reset repo” button  
     D. Commit with an empty message
+    Ans: B. Right-click the file in the Changes list and select “Discard changes”
 
 17. **Which of the following is true about untracked files in Git?**  
     A. They are included in commits by default  
     B. They are files Git is not currently tracking; you must stage them to start tracking  
     C. They are stored only on GitHub  
     D. They are always ignored by `.gitignore`
+    Ans: B. They are files Git is not currently tracking; you must stage them to start tracking
 
 18. **In GitHub Desktop, what does “Add existing repository” do?**  
     A. Creates a new repo on GitHub  
     B. Adds a local folder that already has a `.git` folder to GitHub Desktop’s list  
     C. Clones a repo from GitHub  
     D. Deletes a repo from disk
+    Ans: B. Adds a local folder that already has a `.git` folder to GitHub Desktop’s list
 
 19. **You committed accidentally to the wrong branch in GitHub Desktop. What is a safe, typical way to move that commit to the correct branch?**  
     A. Delete the entire repo and start over  
     B. Use “Undo last commit” in GitHub Desktop, switch branches, then commit again  
     C. Force push to remote  
     D. It is impossible
+    Ans: B. Use “Undo last commit” in GitHub Desktop, switch branches, then commit again
 
 20. **Which setting is important to configure (typically on first use of Git) for correct commit attribution?**  
     A. Default remote name  
     B. Username and password for GitHub Desktop only  
     C. Git user name and email (`user.name`, `user.email`)  
     D. Branch protection rules
+    Ans: C. Git user name and email (`user.name`, `user.email`)
 
 21. **What does “Clone repository → URL” let you do in GitHub Desktop?**  
     A. Enter a URL to a GitHub profile and download all repos  
     B. Enter any valid Git repository URL (GitHub, GitLab, etc.) and clone it locally  
     C. Copy only `.gitignore` from a remote  
     D. Only works for GitHub Enterprise
+    Ans: B. Enter any valid Git repository URL (GitHub, GitLab, etc.) and clone it locally
 
 22. **What is the main reason to create a `.gitignore` file when using GitHub Desktop?**  
     A. To prevent GitHub Desktop from opening the project  
     B. To prevent Git from tracking build artifacts, logs, and other unwanted files  
     C. To disable history for a repo  
     D. To block pull requests
+    Ans: B. To prevent Git from tracking build artifacts, logs, and other unwanted files
 
 23. **In GitHub Desktop, what does “Open in Visual Studio Code” do?**  
     A. Clones the repo into VS Code  
     B. Opens the repo folder in VS Code as a project/workspace  
     C. Installs Git in VS Code  
     D. Only opens the last modified file
+    Ans: B. Opens the repo folder in VS Code as a project/workspace
 
 24. **What happens if you try to push from GitHub Desktop when your local branch is behind the remote branch?**  
     A. Push will always succeed  
     B. GitHub Desktop will force push automatically  
     C. GitHub Desktop will ask you to pull first, then push after resolving any conflicts  
     D. Your local commits will be lost
+    Ans: C. GitHub Desktop will ask you to pull first, then push after resolving any conflicts
 
 25. **Which statement about branches and pull requests on GitHub is correct?**  
     A. You can only create a pull request from `main`  
     B. A pull request merges changes from one branch into another, usually after review  
     C. You don’t need branches; pull requests work only on local commits  
     D. A pull request deletes the source branch automatically
+    Ans: B. A pull request merges changes from one branch into another, usually after review
 
 ---
 
 ## Section 2 – Short Answer / Explanation (Git + GitHub Basics)
 
-1. **Explain the difference between:**
+### 1. Difference between:
 
-   - Working directory
-   - Staging area
-   - Local repository
+- **Working directory**  
+  The actual files and folders on your computer that you are editing.  
+  Represents the current state of your project (including untracked and modified files).
 
-2. **What problem does version control (like Git) solve for developers and teams?**
+- **Staging area (Index)**  
+  A “holding zone” where you mark changes that should be included in the next commit.  
+  You selectively add files here using `git add`.
 
-3. **What is the difference between `git clone` and a GitHub fork?**
-
-4. **Why is writing a good commit message important? Give two reasons.**
-
-5. **What does it mean to “pull” from a remote repository? How is it different from “fetch”?**
-
-6. **What is a merge conflict and when does it happen?**
-
-7. **In GitHub, what is the purpose of a Pull Request (PR) review (comments, approvals, etc.)?**
-
-8. **Why is it a good idea not to work directly on the `main`/`master` branch for every change?**
+- **Local repository**  
+  The hidden `.git` folder that stores the full history of commits, branches, and metadata.  
+  It’s where Git permanently records changes once you commit.
 
 ---
 
-### Section 2 – Extra Short Answer Questions (Concepts + Desktop Workflow)
+### 2. Problem version control solves
 
-9. **In your own words, describe the difference between a local repository and a remote repository.**
+- Tracks changes over time, allowing rollback to earlier versions.
+- Enables collaboration without overwriting each other’s work.
+- Provides accountability (who changed what, when, and why).
+- Supports branching/merging for parallel development.
 
-10. **You created a new project folder, opened GitHub Desktop, and chose “Add existing repository”, but GitHub Desktop says it does not appear to be a Git repository. What are two possible reasons for this?**
+---
 
-11. **Explain the difference between “Commit to main” and “Push origin” in GitHub Desktop.**
+### 3. Difference between `git clone` and GitHub fork
 
-12. **How can you see what changed in a file before you commit it using GitHub Desktop?**
+- **`git clone`**: Creates a local copy of an existing remote repository (any Git server).
+- **Fork**: Creates a _new copy_ of someone else’s repository under your GitHub account, so you can modify independently and propose changes back via pull requests.
+- Forks are GitHub-specific; cloning is a general Git operation.
 
-13. **When would you use “Undo last commit” in GitHub Desktop, and what does it do?**
+---
 
-14. **Describe a typical workflow to fix a bug using a feature branch and GitHub Desktop.**
+### 4. Importance of good commit messages
 
-15. **Suppose you have uncommitted changes on branch A, but you need to switch to branch B in GitHub Desktop. What safe options do you have?**
+1. Helps teammates (and your future self) understand _why_ a change was made.
+2. Makes debugging and reviewing history easier, especially when tracking down bugs or regressions.
 
-16. **Why is it risky to use force push (`git push --force`) and why does GitHub Desktop usually avoid it for normal workflows?**
+---
 
-17. **What information do you typically see for each commit in the History tab of GitHub Desktop?**
+### 5. Pull vs Fetch
 
-18. **How can you clone a repository from GitHub if it belongs to your organization and not your personal account?**
+- **Pull**: Downloads changes from the remote and _merges_ them into your current branch.
+- **Fetch**: Downloads changes from the remote but does **not** merge; you can inspect them first.
+- Pull = Fetch + Merge.
+
+---
+
+### 6. Merge conflict
+
+- Happens when Git cannot automatically reconcile differences between two branches.
+- Example: Two people edit the same line in a file differently.
+- Requires manual resolution before completing the merge.
+
+---
+
+### 7. Purpose of a Pull Request (PR) review
+
+- Ensures code quality through peer review.
+- Allows discussion, suggestions, and approval before merging.
+- Acts as a checkpoint for collaboration, catching bugs or design issues early.
+
+---
+
+### 8. Why avoid working directly on `main`/`master`
+
+- Keeps the main branch stable and production-ready.
+- Prevents accidental breaking changes from being pushed.
+- Encourages feature branches, which isolate work and make collaboration/review easier.
+
+---
+
+## Section 2 – Extra Short Answer Questions (Concepts + Desktop Workflow)
+
+### 9. Difference between a local repository and a remote repository
+
+- **Local repository**: Stored on your computer; where you make changes, commits, and test code.
+- **Remote repository**: Hosted on a server (e.g., GitHub); acts as a shared version accessible to collaborators.
+
+---
+
+### 10. Reasons GitHub Desktop says a folder is not a Git repository
+
+- The folder does not contain a `.git` directory (Git was never initialized).
+- The folder is empty or only contains files but has not been set up with `git init`.
+
+---
+
+### 11. Difference between “Commit to main” and “Push origin”
+
+- **Commit to main**: Saves changes to your local repository’s main branch.
+- **Push origin**: Uploads those local commits to the remote repository on GitHub.
+
+---
+
+### 12. Viewing changes before committing
+
+- In GitHub Desktop, select the file in the **Changes** tab.
+- The app shows a **diff view** highlighting added (green) and removed (red) lines.
+
+---
+
+### 13. Using “Undo last commit”
+
+- Used when you realize the last commit message or included changes were incorrect.
+- It removes the commit from history but keeps the changes staged, allowing you to recommit properly.
+
+---
+
+### 14. Typical workflow to fix a bug using a feature branch
+
+1. Create a new branch from `main` (e.g., `bugfix/issue-123`).
+2. Make code changes to fix the bug.
+3. Commit changes locally.
+4. Push the branch to GitHub.
+5. Open a Pull Request to merge the fix into `main`.
+6. After review, merge and delete the feature branch.
+
+---
+
+### 15. Safe options when switching branches with uncommitted changes
+
+- **Commit the changes** on branch A before switching.
+- **Stash the changes** so they can be reapplied later.
+- **Discard changes** if they are not needed.
+
+---
+
+### 16. Risks of force push (`git push --force`)
+
+- It rewrites history on the remote repository.
+- Can overwrite teammates’ commits, causing data loss or confusion.
+- GitHub Desktop avoids it to maintain safe, collaborative workflows.
+
+---
+
+### 17. Information shown in the History tab for each commit
+
+- Commit message.
+- Author name and avatar.
+- Date and time of commit.
+- List of changed files with diffs.
+
+---
+
+### 18. Cloning a repository from an organization
+
+- In GitHub Desktop, choose **File → Clone Repository**.
+- Select the **Organization tab** instead of personal repositories.
+- Pick the repository from the organization list and clone it locally.
 
 ---
 
 ## Section 3 – GitHub Desktop–Focused Scenarios
 
-1. **You have modified several files in your local repository.**  
-   Describe the exact steps in GitHub Desktop to create a commit and push it to GitHub.
+### 1. Creating a commit and pushing it to GitHub
 
-2. **You committed your changes in GitHub Desktop, but when you check GitHub in the browser, you don’t see your latest commit.**  
-   What step did you likely forget?
-
-3. **How do you switch to a different branch in GitHub Desktop?**  
-   Describe the steps.
-
-4. **You see a “Fetch origin” button in GitHub Desktop. Sometimes it changes to “Pull origin” or “Push origin”.**  
-   Explain what each of these means:
-   - Fetch origin
-   - Pull origin
-   - Push origin
+1. Open GitHub Desktop and ensure the correct repository is selected.
+2. In the **Changes** tab, review the modified files.
+3. Optionally, check/uncheck files to include/exclude them from the commit.
+4. Write a **summary** (required) and **description** (optional) for the commit.
+5. Click **Commit to main** (or the current branch).
+6. After committing, click **Push origin** to send the commit to GitHub.
 
 ---
 
-### Section 3 – Extra Scenario-Based Questions (Desktop + Real-World Problems)
+### 2. Commit visible locally but not on GitHub
 
-5. **You pushed code to GitHub yesterday from your office computer using GitHub Desktop. Today, you cloned the same repo at home but your latest changes are missing. What likely went wrong?**
+- You likely forgot to **Push origin** after committing.  
+  Committing only saves changes locally; pushing uploads them to GitHub.
 
-6. **A teammate complains they don’t see your changes in their local repo even after pulling `main`. On GitHub, your commit is visible. What might they be doing wrong?**
+---
 
-7. **You are reviewing a pull request on GitHub and want to test it locally using GitHub Desktop. How can you check out the PR branch locally?**
+### 3. Switching to a different branch
 
-8. **Your repo has large log files and build artifacts that you don’t want to track in Git. They already appear in the Changes tab. What steps should you take so they are no longer tracked or shown there?**
+1. In GitHub Desktop, go to the **Current Branch** dropdown at the top.
+2. Select the branch you want to switch to from the list.
+3. If the branch doesn’t exist locally, choose **Choose a branch to merge into current branch** or **New Branch** to create one.
 
-9. **You created a repo locally in GitHub Desktop but forgot to Publish it. Later, you want to push it to GitHub for backup. What steps do you take in GitHub Desktop to publish it?**
+---
+
+### 4. Meaning of Fetch, Pull, and Push origin
+
+- **Fetch origin**: Downloads information about new commits from the remote without merging them into your local branch.
+- **Pull origin**: Fetches and merges commits from the remote branch into your local branch.
+- **Push origin**: Uploads your local commits to the remote repository on GitHub.
+
+---
+
+## Section 3 – Extra Scenario-Based Questions (Desktop + Real-World Problems)
+
+### 5. Missing changes after cloning at home
+
+- You may have committed locally but **forgot to push** the changes from your office computer.
+- The remote repo doesn’t have your latest commits, so cloning at home shows the older state.
+
+---
+
+### 6. Teammate doesn’t see changes after pulling
+
+- They might be on the wrong branch (e.g., not on `main`).
+- They may not have pulled from the correct remote (e.g., pulling from their fork instead of the shared repo).
+- They could have local conflicts preventing the pull from completing.
+
+---
+
+### 7. Checking out a PR branch locally
+
+1. In GitHub Desktop, go to the **Branch** menu.
+2. Select **Choose a branch to checkout**.
+3. Look under the **Pull Requests** section.
+4. Select the PR branch to check it out locally and test.
+
+---
+
+### 8. Excluding log files and build artifacts
+
+1. Add the file patterns (e.g., `*.log`, `build/`) to a `.gitignore` file in the repo.
+2. Commit the updated `.gitignore`.
+3. If the files were already tracked, remove them from Git with `git rm --cached <file>` (or use GitHub Desktop’s “Discard changes” after untracking).
+4. They will no longer appear in the Changes tab.
+
+---
+
+### 9. Publishing a local repo to GitHub
+
+1. Open GitHub Desktop and select the local repository.
+2. Click **Publish repository** in the top bar.
+3. Fill in details such as repository name, description, and visibility (public/private).
+4. Click **Publish Repository** to push it to GitHub for backup.
 
 ---
 
