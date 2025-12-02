@@ -89,98 +89,98 @@
     A. Git is not installed  
     B. Your working directory matches the last commit on the current branch  
     C. There are untracked files only  
-    D. Your repo is not connected to GitHub
+    D. Your repo is not connected to GitHub  
     Ans: Your working directory matches the last commit on the current branch
 
 13. **Which action in GitHub Desktop corresponds to creating a local copy from a remote repository on GitHub?**  
     A. Add existing repository  
     B. Create a new repository  
     C. Clone a repository  
-    D. Publish repository
+    D. Publish repository  
     Ans: C. Clone a repository
 
 14. **You see a blue dot next to a branch name in GitHub Desktop’s branch list. What does it usually indicate?**  
     A. The branch is remote-only  
     B. The branch is protected  
     C. The branch has uncommitted changes  
-    D. The branch is currently checked out
+    D. The branch is currently checked out  
     Ans: D. The branch is currently checked out
 
 15. **In Git, what is the purpose of the `HEAD` pointer?**  
     A. It stores all commit messages  
     B. It points to the currently checked-out commit/branch  
     C. It points to the remote repository  
-    D. It stores your username and email
+    D. It stores your username and email  
     Ans: B. It points to the currently checked-out commit/branch
 
 16. **In GitHub Desktop, how can you discard changes in a specific file (revert it to last commit)?**  
     A. Delete the file manually from the OS  
     B. Right-click the file in the Changes list and select “Discard changes”  
     C. Press a “Reset repo” button  
-    D. Commit with an empty message
+    D. Commit with an empty message  
     Ans: B. Right-click the file in the Changes list and select “Discard changes”
 
 17. **Which of the following is true about untracked files in Git?**  
     A. They are included in commits by default  
     B. They are files Git is not currently tracking; you must stage them to start tracking  
     C. They are stored only on GitHub  
-    D. They are always ignored by `.gitignore`
+    D. They are always ignored by `.gitignore`  
     Ans: B. They are files Git is not currently tracking; you must stage them to start tracking
 
 18. **In GitHub Desktop, what does “Add existing repository” do?**  
     A. Creates a new repo on GitHub  
     B. Adds a local folder that already has a `.git` folder to GitHub Desktop’s list  
     C. Clones a repo from GitHub  
-    D. Deletes a repo from disk
+    D. Deletes a repo from disk  
     Ans: B. Adds a local folder that already has a `.git` folder to GitHub Desktop’s list
 
 19. **You committed accidentally to the wrong branch in GitHub Desktop. What is a safe, typical way to move that commit to the correct branch?**  
     A. Delete the entire repo and start over  
     B. Use “Undo last commit” in GitHub Desktop, switch branches, then commit again  
     C. Force push to remote  
-    D. It is impossible
+    D. It is impossible  
     Ans: B. Use “Undo last commit” in GitHub Desktop, switch branches, then commit again
 
 20. **Which setting is important to configure (typically on first use of Git) for correct commit attribution?**  
     A. Default remote name  
     B. Username and password for GitHub Desktop only  
     C. Git user name and email (`user.name`, `user.email`)  
-    D. Branch protection rules
+    D. Branch protection rules  
     Ans: C. Git user name and email (`user.name`, `user.email`)
 
 21. **What does “Clone repository → URL” let you do in GitHub Desktop?**  
     A. Enter a URL to a GitHub profile and download all repos  
     B. Enter any valid Git repository URL (GitHub, GitLab, etc.) and clone it locally  
     C. Copy only `.gitignore` from a remote  
-    D. Only works for GitHub Enterprise
+    D. Only works for GitHub Enterprise  
     Ans: B. Enter any valid Git repository URL (GitHub, GitLab, etc.) and clone it locally
 
 22. **What is the main reason to create a `.gitignore` file when using GitHub Desktop?**  
     A. To prevent GitHub Desktop from opening the project  
     B. To prevent Git from tracking build artifacts, logs, and other unwanted files  
     C. To disable history for a repo  
-    D. To block pull requests
+    D. To block pull requests  
     Ans: B. To prevent Git from tracking build artifacts, logs, and other unwanted files
 
 23. **In GitHub Desktop, what does “Open in Visual Studio Code” do?**  
     A. Clones the repo into VS Code  
     B. Opens the repo folder in VS Code as a project/workspace  
     C. Installs Git in VS Code  
-    D. Only opens the last modified file
+    D. Only opens the last modified file  
     Ans: B. Opens the repo folder in VS Code as a project/workspace
 
 24. **What happens if you try to push from GitHub Desktop when your local branch is behind the remote branch?**  
     A. Push will always succeed  
     B. GitHub Desktop will force push automatically  
     C. GitHub Desktop will ask you to pull first, then push after resolving any conflicts  
-    D. Your local commits will be lost
+    D. Your local commits will be lost  
     Ans: C. GitHub Desktop will ask you to pull first, then push after resolving any conflicts
 
 25. **Which statement about branches and pull requests on GitHub is correct?**  
     A. You can only create a pull request from `main`  
     B. A pull request merges changes from one branch into another, usually after review  
     C. You don’t need branches; pull requests work only on local commits  
-    D. A pull request deletes the source branch automatically
+    D. A pull request deletes the source branch automatically  
     Ans: B. A pull request merges changes from one branch into another, usually after review
 
 ---
