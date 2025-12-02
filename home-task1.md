@@ -82,7 +82,7 @@
     A. Only remote commits  
     B. Only untracked files  
     C. The list of commits on the currently checked-out branch  
-    D. All branches and their commits at once
+    D. All branches and their commits at once  
     Ans: C. The list of commits on the currently checked-out branch
 
 12. **When you see “No local changes” in GitHub Desktop, what does it mean?**  
