@@ -455,15 +455,59 @@ To update your local `main` branch so it matches the remote `main` in GitHub Des
 
 ---
 
-4. **Task 4 – Handling a Simple Merge Conflict in GitHub Desktop**  
-   Scenario:
+## Task 4 – Handling a Simple Merge Conflict in GitHub Desktop
 
-   - On GitHub (web), you edit `README.md` on `main` and commit the change.
-   - Locally, on branch `main`, you edit the same lines in `README.md` differently and commit using GitHub Desktop.
-   - When you try to push, Git requires you to pull first and a merge conflict occurs.
+### Scenario Recap
 
-   **Question:**
+- Remote `main` has changes to `README.md` (edited via GitHub web).
+- Local `main` has conflicting edits to the same lines in `README.md`.
+- A merge conflict occurs when attempting to pull before pushing.
 
-   - Describe the steps you would follow in GitHub Desktop and your editor to resolve this merge conflict and successfully push the final merged version to GitHub.
+---
+
+### Steps to Resolve the Merge Conflict
+
+1. **Pull origin in GitHub Desktop**
+
+   - GitHub Desktop will attempt to merge remote changes into your local branch.
+   - It will detect the conflict and show a warning that `README.md` has conflicts.
+
+2. **Open the conflicted file in your editor**
+
+   - In GitHub Desktop, click **Open in Visual Studio Code** (or your preferred editor).
+   - The file will contain conflict markers:
+     ```text
+     <<<<<<< HEAD
+     Your local changes
+     =======
+     Remote changes from GitHub
+     >>>>>>> origin/main
+     ```
+
+3. **Manually resolve the conflict**
+
+   - Decide whether to keep your local changes, the remote changes, or combine them.
+   - Edit the file to remove the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) and leave only the correct final content.
+
+4. **Save the file**
+
+   - After resolving, save the updated `README.md`.
+
+5. **Return to GitHub Desktop**
+
+   - GitHub Desktop will now show the conflict as resolved.
+   - Stage the resolved file (GitHub Desktop does this automatically once the conflict markers are removed).
+
+6. **Commit the merge resolution**
+
+   - Enter a commit message (e.g., _Resolve merge conflict in README.md_).
+   - Click **Commit merge**.
+
+7. **Push to origin**
+   - Finally, click **Push origin** to upload the resolved version to GitHub.
+
+---
+
+✅ **Result:** The conflict is resolved, your local `main` is merged with remote `main`, and the final version of `README.md` is successfully pushed to GitHub.
 
 ---
