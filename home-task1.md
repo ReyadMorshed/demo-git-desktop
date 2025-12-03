@@ -453,7 +453,9 @@ To update your local `main` branch so it matches the remote `main` in GitHub Des
 4. Click **Pull origin** to download and merge the latest changes from the remote `main` into your local `main`.
 5. Once complete, your local branch will be up to date with the remote branch.
 
-6. **Task 4 – Handling a Simple Merge Conflict in GitHub Desktop**  
+---
+
+4. **Task 4 – Handling a Simple Merge Conflict in GitHub Desktop**  
    Scenario:
 
    - On GitHub (web), you edit `README.md` on `main` and commit the change.
